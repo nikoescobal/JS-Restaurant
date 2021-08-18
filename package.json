@@ -1,0 +1,31 @@
+{
+  "name": "js-restaurant",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx webpack --config webpack.config.js --mode development",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoescobal/JS-Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikoescobal/JS-Restaurant/issues"
+  },
+  "homepage": "https://github.com/nikoescobal/JS-Restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "main": "main.js",
+  "keywords": [],
+  "description": ""
+}
