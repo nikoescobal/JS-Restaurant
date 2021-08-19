@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const content = document.getElementsByClassName('content')[0]\n\nconst header = document.createElement('header');\n\nheader.id = 'header-id'\n\nheader.className = 'header flex bg-gray-100 border'\n\nheader.innerHTML = `\n\n      <ul class='flex'>\n        <li>home</li>\n        <li>menu</li>\n        <li>contact</li>\n      </ul>\n    \n`\ncontent.appendChild(header);\n\n//# sourceURL=webpack://js-restaurant/./src/index.js?");
+eval("const content = document.getElementById('content');\nconst nav = document.createElement('nav');\nnav.className = 'header bg-gray-100 border';\nnav.innerHTML = `\n      <ul class='px-6 flex justify-between w-full'>\n        <li>home</li>\n        <li>menu</li>\n        <li>contact</li>\n      </ul>\n`\ncontent.appendChild(nav);\n\ncontent.style.background = `url('./assets/cookie-cover.jpeg') center`;\n\ncontent.style.minHeight = '100vh';\n\ncontent.style.backgroundSize = 'cover';\n\nconst footer = document.createElement('footer');\n\n//# sourceURL=webpack://js-restaurant/./src/index.js?");
 
 /***/ })
 
