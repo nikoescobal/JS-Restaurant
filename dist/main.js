@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const content = document.getElementById('content');\nconst nav = document.createElement('nav');\nnav.className = 'header bg-gray-100 border';\nnav.innerHTML = `\n      <ul class='px-6 flex justify-between w-full'>\n        <li>home</li>\n        <li>menu</li>\n        <li>contact</li>\n      </ul>\n`\ncontent.appendChild(nav);\n\ncontent.style.background = `url('./assets/cookie-cover.jpeg') center`;\n\ncontent.style.minHeight = '100vh';\n\ncontent.style.backgroundSize = 'cover';\n\nconst footer = document.createElement('footer');\n\n//# sourceURL=webpack://js-restaurant/./src/index.js?");
+eval("const content = document.getElementById('content');\nconst nav = document.createElement('nav');\nnav.className = 'bg-gray-100 border';\nnav.innerHTML = `\n      <div class='p-6 flex justify-between text-2xl text-blue-500 font-mono font-bold'>Cafe Ferdinand\n      <ul class='flex justify-between w-1/2 text-2xl text-blue-500 font-mono font-bold'>\n        <li>Home</li>\n        <li>Menu</li>\n        <li>Contact</li>\n      </ul>\n    </div>\n`\ncontent.appendChild(nav);\n\ncontent.style.background = `url('./assets/cookie-cover.jpeg') center`;\n\ncontent.style.minHeight = '100vh';\n\ncontent.style.backgroundSize = 'cover';\n\nconst footer = document.createElement('footer');\n\n//# sourceURL=webpack://js-restaurant/./src/index.js?");
 
 /***/ })
 

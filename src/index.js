@@ -1,12 +1,14 @@
 const content = document.getElementById('content');
 const nav = document.createElement('nav');
-nav.className = 'header bg-gray-100 border';
+nav.className = 'bg-gray-100 border';
 nav.innerHTML = `
-      <ul class='px-6 flex justify-between w-full'>
-        <li>home</li>
-        <li>menu</li>
-        <li>contact</li>
+      <div class='p-6 flex justify-between text-2xl text-blue-500 font-mono font-bold'>Cafe Ferdinand
+      <ul class='flex justify-between w-1/2 text-2xl text-blue-500 font-mono font-bold'>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Contact</li>
       </ul>
+    </div>
 `
 content.appendChild(nav);
 
