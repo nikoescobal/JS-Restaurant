@@ -1,12 +1,12 @@
 const content = document.getElementById('content');
 const nav = document.createElement('nav');
-nav.className = 'bg-gray-100 border';
+nav.className = 'bg-gray-100 border overflow-hidden border-2 border-gray-200';
 nav.innerHTML = `
-    <div class='px-12 py-8 flex justify-between text-2xl text-blue-500 font-sans font-bold italic'>Tartookie
-      <ul class='flex justify-around w-1/3 text-xl text-blue-500 font-bold'>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Contact</li>
+    <div class='px-12 py-8 flex items-center justify-between text-2xl text-blue-500 font-sans font-bold italic'>Tartookie
+      <ul class='flex justify-around w-1/4 text-xl'>
+        <li><button class='p-3 bg-blue-100 text-blue-500 rounded font-bold'>Home</button></li>
+        <li><button class='p-3 bg-blue-100 text-blue-500 rounded font-bold'>Menu</button></li>
+        <li><button class='p-3 bg-blue-100 text-blue-500 rounded font-bold'>Contact</button></li>
       </ul>
     </div>
 `
