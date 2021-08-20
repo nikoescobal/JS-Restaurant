@@ -4,7 +4,7 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          gv: "'Great Vibes', cursive",
+          custom: "'Great Vibes', cursive",
         },
       },
       variants: {

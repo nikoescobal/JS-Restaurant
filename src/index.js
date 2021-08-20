@@ -2,7 +2,7 @@ const content = document.getElementById('content');
 const nav = document.createElement('nav');
 nav.className = 'bg-blue-100 border overflow-hidden border-2 border-gray-200';
 nav.innerHTML = `
-<div class='px-12 py-6 flex items-center justify-between text-3xl text-blue-700 font-gv font-bold italic'>
+<div class='px-12 py-6 flex items-center justify-between text-3xl text-blue-700 font-custom font-bold italic'>
   <figure class="flex align-items items-center">
   <figcaption>Bistro Ferdinand &nbsp</figcaption>
   <img class="w-12 text-center text-blue-500" src="./assets/dish.png" alt="logo">
@@ -57,37 +57,37 @@ menuText.innerHTML = `
       <div class="w-full text-white text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/pancakes.jpg" alt="Bluberry Pancakes" />
-          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute top-9">Blueberry Pancakes - $10</figcaption>
+          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute bottom-2 right-2">Blueberry Pancakes - $10</figcaption>
         </figure>
       </div>
       <div class="w-full text-white text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/steak-fries.jpg" alt="Steak" />
-          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute top-9">Steak & Fries - $10</figcaption>
+          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute bottom-2 right-2">Steak & Fries - $10</figcaption>
         </figure>
       </div>
       <div class="w-full text-white text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/frutti-di-mare.jpg" alt="Frutti di Mare" />
-          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute top-9">Frutti di Mare - $10</figcaption>
+          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute bottom-2 right-2">Frutti di Mare - $10</figcaption>
         </figure>
       </div>
       <div class="w-full text-white text-center">
         <figure class="relative">
           <img class="w-full max-h-72 object-cover bg-cover" src="./assets/main-image.jpg" alt="Hearty Pizza" />
-          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute top-9">Hearty Pizza - $10</figcaption>
+          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute bottom-2 right-2">Hearty Pizza - $10</figcaption>
         </figure>
       </div>
       <div class="w-full text-white text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/wine3.jpg" alt="Wine" />
-          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute top-9">Drink of the Day - $10</figcaption>
+          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute bottom-2 right-2">Drink of the Day - $10</figcaption>
         </figure>
       </div>
       <div class="w-full text-white text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/coffee-dessert.jpg" alt="Coffee & Dessert of the Day" />
-          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute top-9">Coffee & Dessert of the Day - $10</figcaption>
+          <figcaption class="font-bold rounded italic p-3 bg-blue-400 absolute bottom-2 right-2">Coffee & Dessert of the Day - $10</figcaption>
         </figure>
       </div>
   </div>
