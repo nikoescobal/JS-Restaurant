@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nikoescobal/JS-Restaurant#readme",
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "webpack": "^5.50.0",
     "webpack-cli": "^4.8.0"
   },

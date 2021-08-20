@@ -14,21 +14,28 @@ nav.innerHTML = `
   </ul>
 </div>
 `
+
 content.appendChild(nav);
+
+
+
 
 const home = document.createElement('div');
 
 home.id = 'home';
 
-home.className = 'tabcontent';
+// home.className = 'tabcontent';
 
 home.style.background = `url('./assets/main-image.jpg') center`;
 
-home.style.minHeight = '75vh';
+home.style.minHeight = '90vh';
 
 home.style.backgroundSize = 'cover';
 
-home.addEventListener
+// home.addEventListener('click', function () {
+//   document.getElementById('menu').
+// })
+
 
 const mainText = document.createElement('h1');
 
@@ -50,7 +57,7 @@ menu.id = 'menu';
 
 menu.style.background = `url('./assets/wine.jpg') center`;
 
-menu.style.minHeight = '75vh';
+menu.style.minHeight = '100vh';
 
 menu.style.backgroundSize = 'cover';
 
@@ -62,37 +69,37 @@ menuText.innerHTML = `
       <div class="w-full text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/pancakes.jpg" alt="Bluberry Pancakes" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Blueberry Pancakes - $10</figcaption>
+          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Blueberry Pancakes - $16.00</figcaption>
         </figure>
       </div>
       <div class="w-full text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/steak-fries.jpg" alt="Steak" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Steak & Fries - $10</figcaption>
+          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Steak & Fries - $149.99</figcaption>
         </figure>
       </div>
       <div class="w-full text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/frutti-di-mare.jpg" alt="Frutti di Mare" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Frutti di Mare - $10</figcaption>
+          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Frutti di Mare - $79.99</figcaption>
         </figure>
       </div>
       <div class="w-full text-center">
         <figure class="relative">
           <img class="w-full max-h-72 object-cover bg-cover" src="./assets/main-image.jpg" alt="Hearty Pizza" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Hearty Pizza - $10</figcaption>
+          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Hearty Pizza - $60.00</figcaption>
         </figure>
       </div>
       <div class="w-full text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/wine3.jpg" alt="Wine" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Drink of the Day - $10</figcaption>
+          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Drink of the Day - $22.99</figcaption>
         </figure>
       </div>
       <div class="w-full text-white text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/coffee-dessert.jpg" alt="Coffee & Dessert of the Day" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Coffee & Dessert of the Day - $10</figcaption>
+          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Coffee & Dessert of the Day - $18.99</figcaption>
         </figure>
       </div>
   </div>
@@ -106,7 +113,7 @@ contact.id = 'contact';
 
 contact.style.background = `url('./assets/cafe3.jpg') center`;
 
-contact.style.minHeight = '75vh';
+contact.style.minHeight = '100vh';
 
 contact.style.backgroundSize = 'cover';
 
@@ -139,15 +146,15 @@ contactText.innerHTML = `
 contact.appendChild(contactText);
 content.appendChild(contact);
 
-// const footer = document.createElement('footer');
+const footer = document.createElement('footer');
 
-// footer.innerHTML = `
-//   <footer class="px-4 py-6 flex items-center absolute bottom-0 justify-center text-blue-500 w-full bg-gray-100 font-sans italic z-50">
-//     <p class="flex space-x-2">
-//     <p> Copyright &copy; 2020-2021.&nbsp </p>
-//     <p> Made by Shiver Tech&nbsp</p>
-//     <div class='w-3'><img class='w-full h-full' src="./assets/logo-1.svg" alt="heart image"></div>
+footer.innerHTML = `
+  <footer class="px-4 py-6 flex items-center absolute bottom-0 justify-center text-blue-500 w-full bg-gray-100 font-sans italic z-50">
+    <p class="flex space-x-2">
+    <p> Copyright &copy; 2020-2021.&nbsp </p>
+    <p> Made by Shiver Tech&nbsp</p>
+    <div class='w-3'><img class='w-full h-full' src="./assets/logo-1.svg" alt="heart image"></div>
 
-//   </footer>
-// `
-// content.appendChild(footer);
+  </footer>
+`
+content.appendChild(footer);
