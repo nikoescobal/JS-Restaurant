@@ -2,6 +2,7 @@ const homeContainer = () => {
 
   const home = document.createElement('div');
   home.id = 'home';
+  home.className = 'tabcontent';
   home.style.background = `url('./assets/main-image.jpg') center`;
   home.style.minHeight = '90vh';
   home.style.backgroundSize = 'cover';
