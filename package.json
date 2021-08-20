@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npx webpack --config webpack.config.js --mode development",
-    "build": "webpack"
+    "build": "postcss css/styles.css -o build/styles.css webpack"
   },
   "repository": {
     "type": "git",
