@@ -20,11 +20,15 @@ const home = document.createElement('div');
 
 home.id = 'home';
 
+home.className = 'tabcontent';
+
 home.style.background = `url('./assets/main-image.jpg') center`;
 
 home.style.minHeight = '75vh';
 
 home.style.backgroundSize = 'cover';
+
+home.addEventListener
 
 const mainText = document.createElement('h1');
 
