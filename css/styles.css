@@ -4,10 +4,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-gv {
-  font-family: 'Great Vibes', cursive;
-}
-
-body {
-  background-color: black;
-}

@@ -3,6 +3,8 @@ import homeContainer from './home';
 import menuContainer from './menu';
 import contactContainer from './contact';
 import footerContainer from './footer';
+import '../css/custom.css';
+
 
 const content = document.getElementById('content');
 navContainer(content);
