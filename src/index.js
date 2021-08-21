@@ -12,9 +12,15 @@ content.appendChild(container);
 
 const tablinks = document.querySelectorAll('.tablink');
 tablinks.forEach(tablink => {
-  tablink.addEventListener('click', () => {
+  tablink.addEventListener('click', (e) => {
     let text = tablink.innerHTML + '';
     container.innerHTML = ''
+    tablinks.forEach(tablink => {
+      tablink.classList.remove('bg-yellow-500', 'text-white')
+    })
+    console.log(e.currentTarget);
+    e.target.classList.add('bg-yellow-500', 'text-white');
+    e.target.classList.remove('text-yellow-700');
     switch (text) {
       case 'Home':
         console.log(container)
