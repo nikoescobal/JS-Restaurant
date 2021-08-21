@@ -9,7 +9,7 @@ const menuContainer = () => {
 
   menuText.innerHTML = `
   <h2 class='flex text-center text-white justify-center space-y-6 py-6 font-bold text-6xl font-bold italic'>Menu</h2>
-    <div class="grid grid-cols-3 gap-4 p-4">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 p-4">
       <div class="w-full text-center">
         <figure class="relative">
           <img class="w-full max-h-72" src="./assets/pancakes.jpg" alt="Bluberry Pancakes" />
