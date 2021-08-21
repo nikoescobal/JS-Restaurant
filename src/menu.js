@@ -2,7 +2,6 @@ const menuContainer = () => {
   const menu = document.createElement('div');
 
   menu.id = 'menu';
-  menu.className = 'tabContent';
   menu.style.background = `url('./assets/wine.jpg') center`;
   menu.style.minHeight = '100vh';
   menu.style.backgroundSize = 'cover';
