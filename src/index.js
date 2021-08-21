@@ -5,7 +5,6 @@ import contactContainer from './contact';
 import footerContainer from './footer';
 import '../css/custom.css';
 
-
 const content = document.getElementById('content');
 navContainer(content);
 const container = document.createElement('section');

@@ -9,28 +9,28 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            },
-          },
-          'postcss-loader',
-        ],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
-        use: {
-          loader: 'file-loader',
+      test: /\.css$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
           options: {
-            name: '[name].[hash].[ext]',
-            outputPath: 'imgs',
+            importLoaders: 1,
           },
         },
+        'postcss-loader',
+      ],
+    },
+    {
+      test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[hash].[ext]',
+          outputPath: 'imgs',
+        },
       },
+    },
     ],
   },
 };
