@@ -2,7 +2,7 @@ const homeContainer = () => {
 
   const home = document.createElement('div');
   home.id = 'home';
-  home.className = 'tabcontent';
+  home.className = 'tabContent';
   home.style.background = `url('./assets/main-image.jpg') center`;
   home.style.minHeight = '90vh';
   home.style.backgroundSize = 'cover';
@@ -18,7 +18,8 @@ const homeContainer = () => {
   </div>
   `
   home.appendChild(mainText);
-  content.appendChild(home);
+  // content.appendChild(home);
+  return home;
 
 }
 export default homeContainer;

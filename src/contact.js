@@ -1,7 +1,7 @@
 const contactContainer = () => {
   const contact = document.createElement('div');
   contact.id = 'contact';
-  contact.className = 'tabcontent';
+  contact.className = 'tabContent';
   contact.style.background = `url('./assets/cafe3.jpg') center`;
   contact.style.minHeight = '100vh';
   contact.style.backgroundSize = 'cover';
@@ -32,7 +32,7 @@ const contactContainer = () => {
 </section>
 `
   contact.appendChild(contactText);
-  content.appendChild(contact);
+  return contact;
 
 }
 export default contactContainer;

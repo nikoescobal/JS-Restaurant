@@ -2,7 +2,7 @@ const menuContainer = () => {
   const menu = document.createElement('div');
 
   menu.id = 'menu';
-  menu.className = 'tabcontent';
+  menu.className = 'tabContent';
   menu.style.background = `url('./assets/wine.jpg') center`;
   menu.style.minHeight = '100vh';
   menu.style.backgroundSize = 'cover';
@@ -50,7 +50,6 @@ const menuContainer = () => {
   </div>
 `
   menu.appendChild(menuText);
-  content.appendChild(menu);
-
+  return menu;
 }
 export default menuContainer;
