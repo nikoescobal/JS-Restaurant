@@ -5,7 +5,7 @@ import contactContainer from './contact';
 import footerContainer from './footer';
 
 const content = document.getElementById('content');
-navContainer();
+navContainer(content);
 const container = document.createElement('section');
 container.appendChild(homeContainer());
 content.appendChild(container);
@@ -18,20 +18,16 @@ tablinks.forEach((tablink) => {
     tablinks.forEach((tablink) => {
       tablink.classList.remove('bg-yellow-500', 'text-white');
     });
-    console.log(e.currentTarget);
     e.target.classList.add('bg-yellow-500', 'text-white');
     e.target.classList.remove('text-yellow-700');
     switch (text) {
       case 'Home':
-        console.log(container);
         container.appendChild(homeContainer());
         break;
       case 'Menu':
-        console.log(container);
         container.appendChild(menuContainer());
         break;
       case 'Contact':
-        console.log(container);
         container.appendChild(contactContainer());
         break;
       default:
@@ -40,4 +36,4 @@ tablinks.forEach((tablink) => {
   });
 });
 
-footerContainer();
+footerContainer(content);

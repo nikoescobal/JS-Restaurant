@@ -1,4 +1,4 @@
-import menuItems from "./menudata";
+import menuItems from './menudata';
 
 const menuContainer = () => {
   const menu = document.createElement('div');
@@ -9,16 +9,16 @@ const menuContainer = () => {
   menu.style.backgroundSize = 'cover';
   const menuText = document.createElement('h2');
 
-  let output = ``;
-  menuItems.forEach(el => {
+  let output = '';
+  menuItems.forEach((el) => {
     output += ` 
     <div class="w-full text-center">
     <figure class="relative">
       <img class="rounded w-full object-cover max-h-96" src=${el.image} alt=${el.alt} />
       <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">${el.figcaption}</figcaption>
     </figure>
-  </div>`
-  })
+  </div>`;
+  });
 
   menuText.innerHTML = `
 
