@@ -10,10 +10,10 @@ const homeContainer = () => {
 
   mainText.innerHTML = `
   <div class="flex flex-col py-44">
-    <h1 class="flex text-center justify-center font-bold text-8xl font-bold italic text-white">
+    <h1 class="flex mx-auto rounded p-2 text-center justify-center font-bold text-8xl font-bold italic text-white bg-gradient-to-b from-transparent to-yellow-500 bg-opacity-30 hover:bg-opacity-70">
       Eat. Drink. Indulge.
     </h1>
-    <h2 class="flex text-center justify-center text-2xl space-y-4 italic text-white">Bistro Ferdinand, La Liga Hotel, Barcelona</h2>
+    <h2 class="flex mx-auto rounded p-2 text-center justify-center text-2xl space-y-4 italic text-white bg-gradient-to-b from-transparent to-yellow-800 bg-opacity-30 hover:bg-opacity-70">Bistro Ferdinand, La Liga Hotel, Barcelona</h2>
 
   </div>
   `
