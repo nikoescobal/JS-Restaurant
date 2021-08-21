@@ -8,7 +8,7 @@ const footerContainer = () => {
     <p> Made by Shiver Tech&nbsp</p>
     <div class='w-3'><img class='w-full h-full' src="./assets/logo-1.svg" alt="heart image"></div>
   </footer>
-`
+`;
   content.appendChild(footer);
-}
+};
 export default footerContainer;

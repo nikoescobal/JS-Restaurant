@@ -1,8 +1,8 @@
-import navContainer from "./nav";
-import homeContainer from "./home";
-import menuContainer from "./menu";
-import contactContainer from "./contact";
-import footerContainer from "./footer";
+import navContainer from './nav';
+import homeContainer from './home';
+import menuContainer from './menu';
+import contactContainer from './contact';
+import footerContainer from './footer';
 
 const content = document.getElementById('content');
 navContainer();
@@ -11,33 +11,33 @@ container.appendChild(homeContainer());
 content.appendChild(container);
 
 const tablinks = document.querySelectorAll('.tablink');
-tablinks.forEach(tablink => {
+tablinks.forEach((tablink) => {
   tablink.addEventListener('click', (e) => {
-    let text = tablink.innerHTML + '';
-    container.innerHTML = ''
-    tablinks.forEach(tablink => {
-      tablink.classList.remove('bg-yellow-500', 'text-white')
-    })
+    const text = `${tablink.innerHTML}`;
+    container.innerHTML = '';
+    tablinks.forEach((tablink) => {
+      tablink.classList.remove('bg-yellow-500', 'text-white');
+    });
     console.log(e.currentTarget);
     e.target.classList.add('bg-yellow-500', 'text-white');
     e.target.classList.remove('text-yellow-700');
     switch (text) {
       case 'Home':
-        console.log(container)
-        container.appendChild(homeContainer())
+        console.log(container);
+        container.appendChild(homeContainer());
         break;
       case 'Menu':
-        console.log(container)
-        container.appendChild(menuContainer())
+        console.log(container);
+        container.appendChild(menuContainer());
         break;
       case 'Contact':
-        console.log(container)
-        container.appendChild(contactContainer())
+        console.log(container);
+        container.appendChild(contactContainer());
         break;
       default:
         break;
     }
   });
-})
+});
 
 footerContainer();

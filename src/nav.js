@@ -13,8 +13,8 @@ const navContainer = () => {
     <li><button class='tablink p-3 text-yellow-700 rounded italic font-bold '>Contact</button></li>
   </ul>
 </div>
-`
+`;
 
   content.appendChild(nav);
-}
+};
 export default navContainer;

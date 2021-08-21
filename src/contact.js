@@ -1,7 +1,7 @@
 const contactContainer = () => {
   const contact = document.createElement('div');
   contact.id = 'contact';
-  contact.style.background = `url('./assets/cafe3.jpg') center`;
+  contact.style.background = 'url(\'./assets/cafe3.jpg\') center';
   contact.style.minHeight = '100vh';
   contact.style.backgroundSize = 'cover';
   const contactText = document.createElement('h2');
@@ -29,9 +29,8 @@ const contactContainer = () => {
   </div>
 </div>
 </section>
-`
+`;
   contact.appendChild(contactText);
   return contact;
-
-}
+};
 export default contactContainer;

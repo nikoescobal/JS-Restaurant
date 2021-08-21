@@ -1,54 +1,33 @@
+import menuItems from "./menudata";
+
 const menuContainer = () => {
   const menu = document.createElement('div');
 
   menu.id = 'menu';
-  menu.style.background = `url('./assets/wine.jpg') center`;
+  menu.style.background = 'url(\'./assets/wine.jpg\') center';
   menu.style.minHeight = '100vh';
   menu.style.backgroundSize = 'cover';
   const menuText = document.createElement('h2');
 
+  let output = ``;
+  menuItems.forEach(el => {
+    output += ` 
+    <div class="w-full text-center">
+    <figure class="relative">
+      <img class="rounded w-full object-cover max-h-96" src=${el.image} alt=${el.alt} />
+      <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">${el.figcaption}</figcaption>
+    </figure>
+  </div>`
+  })
+
   menuText.innerHTML = `
+
   <h2 class='flex text-center text-white justify-center space-y-6 py-6 font-bold text-6xl font-bold italic'>Menu</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 p-3 lg:p-4">
-      <div class="w-full text-center">
-        <figure class="relative">
-          <img class="w-full max-h-96" src="./assets/pancakes.jpg" alt="Bluberry Pancakes" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Blueberry Pancakes - $16.00</figcaption>
-        </figure>
-      </div>
-      <div class="w-full text-center">
-        <figure class="relative">
-          <img class="w-full max-h-96 object-cover bg-cover" src="./assets/steak-fries.jpg" alt="Steak" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Steak & Fries - $149.99</figcaption>
-        </figure>
-      </div>
-      <div class="w-full text-center">
-        <figure class="relative">
-          <img class="w-full max-h-96 object-cover bg-cover" src="./assets/frutti-di-mare.jpg" alt="Frutti di Mare" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Frutti di Mare - $79.99</figcaption>
-        </figure>
-      </div>
-      <div class="w-full text-center">
-        <figure class="relative">
-          <img class="w-full max-h-96 object-cover bg-cover" src="./assets/main-image.jpg" alt="Hearty Pizza" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Hearty Pizza - $60.00</figcaption>
-        </figure>
-      </div>
-      <div class="w-full text-center">
-        <figure class="relative">
-          <img class="w-full max-h-96 object-cover bg-cover" src="./assets/wine3.jpg" alt="Wine" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Drink of the Day - $22.99</figcaption>
-        </figure>
-      </div>
-      <div class="w-full text-white text-center">
-        <figure class="relative">
-          <img class="w-full max-h-96 object-cover bg-cover" src="./assets/coffee-dessert.jpg" alt="Coffee & Dessert of the Day" />
-          <figcaption class="font-bold text-yellow-700 rounded italic p-3 bg-gray-100 absolute bottom-2 right-2">Coffee & Dessert of the Day - $18.99</figcaption>
-        </figure>
-      </div>
+    ${output}
   </div>
-`
+`;
   menu.appendChild(menuText);
   return menu;
-}
+};
 export default menuContainer;
