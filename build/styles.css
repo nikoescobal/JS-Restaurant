@@ -1,4 +1,6 @@
-/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
+/* stylelint-disable */
+
+/* ! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -22341,6 +22343,10 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-gv {
+  font-family: 'Great Vibes', cursive;
 }
 
 .text-xs {
@@ -53582,6 +53588,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-gv {
+    font-family: 'Great Vibes', cursive;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -84807,6 +84817,10 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-gv {
+    font-family: 'Great Vibes', cursive;
   }
 
   .md\:text-xs {
@@ -116036,6 +116050,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-gv {
+    font-family: 'Great Vibes', cursive;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -147261,6 +147279,10 @@ video {
 
   .xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-gv {
+    font-family: 'Great Vibes', cursive;
   }
 
   .xl\:text-xs {
@@ -178490,6 +178512,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .\32xl\:font-gv {
+    font-family: 'Great Vibes', cursive;
+  }
+
   .\32xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -188001,3 +188027,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
