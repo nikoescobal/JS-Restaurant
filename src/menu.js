@@ -1,3 +1,4 @@
+// eslint-disable
 import menuItems from './menudata.js';
 
 const menuContainer = () => {
