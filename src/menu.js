@@ -1,5 +1,6 @@
 import menuItems from './menudata';
 
+
 const menuContainer = () => {
   const menu = document.createElement('div');
 
