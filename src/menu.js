@@ -1,5 +1,5 @@
 // eslint-disable
-import menuItems from './menudata.js';
+import menuItems from './menudata';
 
 const menuContainer = () => {
   const menu = document.createElement('div');
