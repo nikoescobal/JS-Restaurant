@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npx webpack -w --config webpack.config.js --mode development && postcss css/styles.css -o build/styles.css"
+    "build": "npx webpack -w --config webpack.config.js --mode development"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import menuItems from './menudata';
+import menuItems from './menudata.js';
 
 const menuContainer = () => {
   const menu = document.createElement('div');
