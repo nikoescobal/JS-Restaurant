@@ -2,6 +2,11 @@
 
 In this project, I designed and built a website for an original restaurant brand, Bistro Ferdinand, a place where people can eat, drink, and indulge. Users can easily switch tabs to navigate between the Home, Menu, and Contact pages. 
 
+## Screenshot
+
+![Screen Shot 2022-01-28 at 7 22 51 AM](https://user-images.githubusercontent.com/62937819/151459809-21ff1276-5b00-426d-bce1-9b62c9008c86.png)
+
+
 ## Built with
 
 - HTML
